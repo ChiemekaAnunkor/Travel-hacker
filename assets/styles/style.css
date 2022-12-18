@@ -1,0 +1,153 @@
+body {
+  /* display: flex; */
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url("https://images.pexels.com/photos/4858277/pexels-photo-4858277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+}
+
+main {
+  flex: 1 0 auto;
+}
+.logo2 {
+  color: #f5f6fd;
+}
+
+.logo1 {
+  color: #4e78c7;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 2;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 3;
+  }
+}
+
+.parallax-container {
+  background-size: cover;
+}
+.transparentBG {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("https://images.pexels.com/photos/4858277/pexels-photo-4858277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  box-shadow: 0 8px 6px -6px black;
+  padding-left: 20px;
+}
+.page-footer {
+  background-image: linear-gradient(to bottom right, #0c3040, #19546993);
+}
+
+.mainbox {
+  background-color: rgba(255, 255, 255, 0.226);
+  position: relative;
+  overflow: hidden;
+  height: 280px;
+}
+
+input {
+  color: white;
+  text-decoration-color: white;
+  width: 200px;
+}
+
+.maintext {
+  margin-top: -25px;
+}
+.secondtext {
+  margin-bottom: -10px;
+}
+
+.currencydisplaybox {
+  margin-top: 20px;
+  width: 95%;
+  height: 120px;
+  margin-left: 15px;
+  background-color: rgba(255, 255, 255, 0.514);
+  display: none;
+}
+#ersubmit {
+  display: none;
+}
+.eventsdisplaybox {
+  margin-top: 20px;
+  width: 95%;
+  height: 100px;
+  margin-left: 15px;
+  background-color: rgba(255, 255, 255, 0.514);
+}
+.button-Container {
+  padding-top: 15px;
+  padding-left: 15px;
+  opacity: 0.5;
+}
+.btn-large {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.btn-small:focus {
+  background-color: rgb(255, 255, 255) !important;
+  opacity: 1 !important;
+  color: #4e78c7 !important;
+}
+#map {
+  height: 400px;
+  margin-top: 10px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 20px black;
+  height: 630px;
+}
+select {
+  display: flex;
+  width: 20%;
+}
+
+#to {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+#from {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#amount {
+  margin: 10px;
+  width: 780px !important;
+}
+#ersubmit {
+  margin-top: 20px;
+  width: 170px;
+}
+#renderamout {
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+#flightsdisplay {
+  display: none;
+}
+#flightsdisplay form {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+#flsubmit {
+  display: none;
+  margin-top: 20px;
+  width: 170px;
+}
+#flightcode {
+  width: 200px !important;
+}
+#fetch-button {
+  margin-top: 20px;
+  width: 170px;
+}
+#flights-title {
+  color: white !important;
+}
+.smalh {
+  height: 150px !important;
+  opacity: 0.9 !important;
+}
+/* materialize helpers for spacing */
